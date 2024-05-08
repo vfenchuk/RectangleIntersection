@@ -1,0 +1,19 @@
+﻿{
+	"iisSettings": {
+		"windowsAuthentication": false,
+		"anonymousAuthentication": true,
+		"iis": {
+			"applicationUrl": "http://rectangle-intersection.development/",
+			"sslPort": 0
+		}
+	},
+	"profiles": {
+		"RectangleIntersectionApi": {
+			"commandName": "IIS",
+			"launchBrowser": true,
+			"environmentVariables": {
+				"ASPNETCORE_ENVIRONMENT": "Development"
+			}
+		}
+	}
+}
