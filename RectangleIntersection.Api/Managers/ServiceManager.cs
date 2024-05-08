@@ -1,6 +1,5 @@
 ﻿using RectangleIntersection.Api.Models;
 using RectangleIntersection.Api.Repositories;
-using System.Drawing;
 
 namespace RectangleIntersection.Api.Managers {
 	public class ServiceManager {

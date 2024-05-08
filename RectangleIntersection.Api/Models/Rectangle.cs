@@ -6,6 +6,23 @@
 		public double RBX { get; set; }
 		public double RBY { get; set; }
 
+		public override bool Equals(object obj) {
+			if (obj == null || GetType() != obj.GetType())
+				return false;
+
+			Rectangle other = (Rectangle) obj;
+
+			return ID == other.ID &&
+				   LTX == other.LTX &&
+				   LTY == other.LTY &&
+				   RBX == other.RBX &&
+				   RBY == other.RBY;
+		}
+
+		public override int GetHashCode() {
+			return HashCode.Combine(ID, LTX, LTY, RBX, RBY);
+		}
+
 		public bool IsIntersectedBySegment(Segment segment) {
 			return IsIntersecting(LTX, LTY, RBX, LTY, segment.StartX, segment.StartY, segment.EndX, segment.EndY) ||
 				   IsIntersecting(RBX, LTY, RBX, RBY, segment.StartX, segment.StartY, segment.EndX, segment.EndY) ||

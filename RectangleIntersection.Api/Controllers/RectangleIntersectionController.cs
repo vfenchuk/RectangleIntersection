@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using RectangleIntersection.Api.Managers;
 using RectangleIntersection.Api.Models;
-using System.Drawing;
 
 namespace RectangleIntersection.Api.Controllers {
 	[ApiController]
